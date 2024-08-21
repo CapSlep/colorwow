@@ -23,3 +23,15 @@ document.querySelector('.custom-button-prev').addEventListener('click', () => {
 document.querySelector('.custom-button-next').addEventListener('click', () => {
     swiper.slideNext();
 });
+
+
+//Проставление лайка-дизлайка
+$('.like-diselike__link').click(function (e) {
+    e.preventDefault();
+    let currentAction = $(this);
+    currentActionText = currentAction.text();
+    currentAction.addClass('active');
+    console.log(currentActionText);
+    currentAction.find('.like-diselike__value').text(Number(currentActionText) + 1);
+    currentAction.closest('.like-diselike').addClass('noclick');
+});
