@@ -500,8 +500,9 @@ ol {
     float: left;
     width: calc(100% - 30px);
     padding-left: 10px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b6d76;
 }
 .review-item-head__subtext {
     float: left;
@@ -564,4 +565,25 @@ ol {
 .footer {
     padding: 1rem 0;
     text-align: center;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+.review__img-wrapper {
+    margin: 15px 0;
+}
+
+.review__img-wrapper img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+}
+
+.review__title {
+    color: #6b6d76;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 125%;
 }
